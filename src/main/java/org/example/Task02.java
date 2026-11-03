@@ -1,20 +1,29 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class Task02 {
     static void main() {
 
-        int age = 5;
-        double simagle = 10;
-        double wona = 15;
+        String userName = "kokuna";
+        String password = "ASDasd123";
 
-        if (age > 4) {
-            simagle = wona - age;
+        Scanner scanner = new Scanner(System.in);
 
-        } else {
+        System.out.println("ჩაწერე მომხმარებლის სახელი: ");
+        String correcrUserName = scanner.nextLine();
 
-            System.out.println(wona);
+        System.out.println("ჩაწერე სწორი პაროლი: ");
+        String correctPassword = scanner.nextLine();
+
+        if(userName.equals(correcrUserName) && password.equals(correctPassword)){
+            System.out.println("Login successful");
 
         }
-        System.out.println("asaki aris:" + age);
+        else System.out.println("Invalid username or password");
+        scanner.close();
     }
 }
+
+
+
