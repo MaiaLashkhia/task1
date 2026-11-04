@@ -3,22 +3,29 @@ package org.example;
 public class Task05 {
     static void main() {
 
-     String saxeli = "maa";
+     String text = "Albert Einstein";
 
-     switch (saxeli){
-         case "luka":
-             System.out.println("k");
-             break;
-         case "maka":
-             System.out.println("b");
-             break;
-         case "maia":
-             System.out.println("ki");
-             break;
-         default:
-             System.out.println("z");
+                int vowelCount = 0;
+                for (int i = 0; i < text.length(); i++) {
+                    char ch = Character. toLowerCase(text.charAt(i));
+                    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                        vowelCount++;
+                    }
+                }
+                System.out.println("ხმოვანების რაოდენობა: " + vowelCount);
 
-     }
-      }
-    }
+
+                int length = text.length();
+                System.out.println("სტრინგის სიგრძე: " + length);
+
+
+                if (length % 2 == 0) {
+                    System.out.println("ლუწი");
+                } else {
+                    System.out.println("კენტი");
+                }
+            }
+        }
+
+
 
