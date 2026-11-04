@@ -1,4 +1,29 @@
 package org.example;
 
 public class Task04 {
+    static void main() {
+
+
+        String orderStatus = "SHIPPED";
+
+        switch (orderStatus) {
+            case "NEW":
+                System.out.println("Order receivet");
+                break;
+            case "PROCESSING":
+                System.out.println("Order is being prepared");
+                break;
+
+            case "SHIPPED":
+                System.out.println("Order is on the way");
+                break;
+
+            case "DELIVERED":
+                System.out.println("Order delivered");
+                break;
+
+            default:
+                System.out.println("Unknown status");
+        }
+    }
 }
